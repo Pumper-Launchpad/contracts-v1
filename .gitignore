@@ -1,0 +1,29 @@
+# ===== Pumper Protocol — Contracts (V1) =====
+# Publish set: README.md, contract-meta.json, logo.png, abi/*.json, and the
+# V1 launchpad-family sources under src/.
+
+.env
+.env.*
+.DS_Store
+
+# src/: allow-list the launchpad family; anything else dropped in here stays out.
+src/*
+!src/PumperLaunchpad.sol
+!src/PumperToken.sol
+!src/PumperTokenFactory.sol
+!src/PumperRewardLocker.sol
+!src/PumperProtocolRegistry.sol
+!src/PumperAdminVault.sol
+!src/PumperBuybackVault.sol
+!src/PumperFeferVault.sol
+!src/FeferVault.sol
+!src/PumperTokenLock.sol
+!src/PumperLPLocker.sol
+!src/Interfaces.sol
+!src/TickMath.sol
+!src/FullMath.sol
+!src/MinimalPositionManager.sol
+!src/MinimalSwapRouter02.sol
+!src/MinimalSwapRouter02Standard.sol
+!src/MinimalQuoterV2.sol
+!src/MinimalQuoterV2Adapter.sol

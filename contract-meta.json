@@ -1,0 +1,117 @@
+{
+  "project": "Pumper Protocol launchpad (V1)",
+  "network": "Stable",
+  "chainId": 988,
+  "factory": "0x8792312795eba629ca661B0aF1ca162adE84D0FE",
+  "contractName": "PumperLaunchpad",
+  "language": "solidity",
+  "compiler": "0.8.35",
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  },
+  "evmVersion": "osaka",
+  "viaIR": true,
+  "dependencies": {
+    "@openzeppelin/contracts": "5.1.0"
+  },
+  "contracts": [
+    {
+      "name": "PumperLaunchpad",
+      "address": "0x8792312795eba629ca661B0aF1ca162adE84D0FE",
+      "source": "src/PumperLaunchpad.sol",
+      "abi": "abi/PumperLaunchpad.json"
+    },
+    {
+      "name": "PumperTokenFactory",
+      "address": "0xFC29C5b1AAEAab74Fd8741EfdC40916fac76eC1C",
+      "source": "src/PumperTokenFactory.sol",
+      "abi": "abi/PumperTokenFactory.json"
+    },
+    {
+      "name": "PumperProtocolRegistry",
+      "address": "0x7Cd190e5Ba34C1Ec8FE07F78EddB026719940492",
+      "source": "src/PumperProtocolRegistry.sol",
+      "abi": "abi/PumperProtocolRegistry.json"
+    },
+    {
+      "name": "PumperAdminVault",
+      "address": "0xb961cE542585F15DC447eF97a11A3392DbD11F06",
+      "source": "src/PumperAdminVault.sol",
+      "abi": "abi/PumperAdminVault.json"
+    },
+    {
+      "name": "PumperFeferVault",
+      "address": "0x18318aeF89d4D84f2f2a87764179142fF267e1b9",
+      "source": "src/PumperFeferVault.sol",
+      "abi": "abi/PumperFeferVault.json"
+    },
+    {
+      "name": "PumperBuybackVault",
+      "address": "0x59084fD740552807891f80F836011EBE5995685e",
+      "source": "src/PumperBuybackVault.sol",
+      "abi": "abi/PumperBuybackVault.json"
+    },
+    {
+      "name": "PumperTokenLock",
+      "address": "0xCdf08BaFF586BEF22DD1a845911df3dbE6CEe58A",
+      "source": "src/PumperTokenLock.sol",
+      "abi": "abi/PumperTokenLock.json"
+    },
+    {
+      "name": "PumperLPLocker",
+      "address": "0x1ED94C0b0A8c9d0a91BB4DEB20677C90580D8366",
+      "source": "src/PumperLPLocker.sol",
+      "abi": "abi/PumperLPLocker.json"
+    },
+    {
+      "name": "PumperToken",
+      "address": null,
+      "deployedPerLaunch": true,
+      "deployedBy": "PumperTokenFactory",
+      "source": "src/PumperToken.sol",
+      "abi": "abi/PumperToken.json"
+    },
+    {
+      "name": "PumperRewardLocker",
+      "address": null,
+      "deployedPerLaunch": true,
+      "deployedBy": "PumperToken (constructor)",
+      "source": "src/PumperRewardLocker.sol",
+      "abi": "abi/PumperRewardLocker.json"
+    }
+  ],
+  "rewardAsset": {
+    "address": "0x817997Ca8394E26CCE3dE3A076a4889b27DbF9dE",
+    "symbol": "WgUSDT",
+    "decimals": 18
+  },
+  "feeSplitBps": {
+    "adminVault": 1000,
+    "feferVault": 500,
+    "pumperBuyAndBurn": 500,
+    "stakers": 8000
+  },
+  "sources": [
+    "src/Interfaces.sol",
+    "src/PumperLaunchpad.sol",
+    "src/PumperProtocolRegistry.sol",
+    "src/PumperRewardLocker.sol",
+    "src/PumperToken.sol",
+    "src/PumperTokenFactory.sol",
+    "src/TickMath.sol",
+    "lib/openzeppelin-contracts/contracts/interfaces/IERC1363.sol",
+    "lib/openzeppelin-contracts/contracts/interfaces/IERC165.sol",
+    "lib/openzeppelin-contracts/contracts/interfaces/IERC20.sol",
+    "lib/openzeppelin-contracts/contracts/interfaces/draft-IERC6093.sol",
+    "lib/openzeppelin-contracts/contracts/token/ERC20/ERC20.sol",
+    "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+    "lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+    "lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol",
+    "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+    "lib/openzeppelin-contracts/contracts/utils/Context.sol",
+    "lib/openzeppelin-contracts/contracts/utils/Errors.sol",
+    "lib/openzeppelin-contracts/contracts/utils/ReentrancyGuard.sol",
+    "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol"
+  ]
+}
